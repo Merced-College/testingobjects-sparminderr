@@ -50,6 +50,13 @@ public class Main {
         System.out.println("d3 age via getter = " + d3.getAge());
         System.out.println("d3 now = " + d3);
 
+        // making a default book object
+        Book book1 = new Book();
+        // making a book object with given data 
+        Book book2 = new Book("Lord of the Rings", true, 1954);
+        System.out.println("book object 1 " + book1);
+        System.out.println("book object 2 " + book2);
+
     } // end main
 
 } // end class
