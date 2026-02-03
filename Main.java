@@ -50,12 +50,21 @@ public class Main {
         System.out.println("d3 age via getter = " + d3.getAge());
         System.out.println("d3 now = " + d3);
 
+        
         // making a default book object
         Book book1 = new Book();
         // making a book object with given data 
         Book book2 = new Book("Lord of the Rings", true, 1954);
-        System.out.println("book object 1 " + book1);
+        System.out.println("\nbook object 1 " + book1);
         System.out.println("book object 2 " + book2);
+
+        Book book3 = new Book("Le Morte d'Arthur", false, 1485); 
+        System.out.println("\nbook3 after parameterized constructor:");
+        System.out.println("name = " + book3.getName() + ", read = " + book3.getRead()+ ", year = " + book3.getYear());
+
+        System.out.println("\nPrinting objects after overriding toString():"); // calls toString method in Book.java, also overrides it
+        System.out.println("book2 = " + book2);
+        System.out.println("book3 = " + book3);
 
     } // end main
 
